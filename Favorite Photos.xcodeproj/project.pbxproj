@@ -21,6 +21,8 @@
 		0E95C15F193D10A000B2FAD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E95C141193D10A000B2FAD4 /* UIKit.framework */; };
 		0E95C167193D10A000B2FAD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E95C165193D10A000B2FAD4 /* InfoPlist.strings */; };
 		0E95C169193D10A000B2FAD4 /* Favorite_PhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C168193D10A000B2FAD4 /* Favorite_PhotosTests.m */; };
+		0E95C174193D12F500B2FAD4 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C173193D12F500B2FAD4 /* Photo.m */; };
+		0E95C177193D14E500B2FAD4 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C176193D14E500B2FAD4 /* PhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		0E95C164193D10A000B2FAD4 /* Favorite PhotosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Favorite PhotosTests-Info.plist"; sourceTree = "<group>"; };
 		0E95C166193D10A000B2FAD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E95C168193D10A000B2FAD4 /* Favorite_PhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Favorite_PhotosTests.m; sourceTree = "<group>"; };
+		0E95C172193D12F500B2FAD4 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		0E95C173193D12F500B2FAD4 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		0E95C175193D14E500B2FAD4 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		0E95C176193D14E500B2FAD4 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +121,12 @@
 				0E95C14C193D10A000B2FAD4 /* AppDelegate.h */,
 				0E95C14D193D10A000B2FAD4 /* AppDelegate.m */,
 				0E95C14F193D10A000B2FAD4 /* Main.storyboard */,
+				0E95C175193D14E500B2FAD4 /* PhotoCell.h */,
+				0E95C176193D14E500B2FAD4 /* PhotoCell.m */,
 				0E95C152193D10A000B2FAD4 /* ViewController.h */,
 				0E95C153193D10A000B2FAD4 /* ViewController.m */,
+				0E95C172193D12F500B2FAD4 /* Photo.h */,
+				0E95C173193D12F500B2FAD4 /* Photo.m */,
 				0E95C155193D10A000B2FAD4 /* Images.xcassets */,
 				0E95C144193D10A000B2FAD4 /* Supporting Files */,
 			);
@@ -249,6 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E95C174193D12F500B2FAD4 /* Photo.m in Sources */,
+				0E95C177193D14E500B2FAD4 /* PhotoCell.m in Sources */,
 				0E95C154193D10A000B2FAD4 /* ViewController.m in Sources */,
 				0E95C14E193D10A000B2FAD4 /* AppDelegate.m in Sources */,
 				0E95C14A193D10A000B2FAD4 /* main.m in Sources */,
