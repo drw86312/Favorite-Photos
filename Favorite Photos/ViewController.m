@@ -12,6 +12,7 @@
 
 @interface ViewController () <UICollectionViewDataSource ,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property NSMutableArray *photosArray;
+@property NSMutableArray *favoritesArray;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UITextField *searchInput;
 @property (weak, nonatomic) IBOutlet UILabel *imagesToShow;
@@ -23,15 +24,22 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+
+    // Stepper setup
     self.imagesToShow.text = @"10";
     self.stepperOutlet.value = 10.0;
     self.stepperOutlet.stepValue = 5.0;
+    self.stepperOutlet.maximumValue = 50.0;
+    self.stepperOutlet.minimumValue = 0.0;
 
-    [super viewDidLoad];
-    self.photosArray = [[NSMutableArray alloc] init];
-
+    self.photosArray = [NSMutableArray array];
+    self.favoritesArray = [NSMutableArray array];
 }
-- (IBAction)onSearchButtonPressed:(id)sender
+
+#pragma  mark - IBActions
+
+-(IBAction)onSearchButtonPressed:(id)sender
 {
     [self.photosArray removeAllObjects];
     NSString *stringFromSearch = self.searchInput.text;
@@ -39,14 +47,9 @@
     [self.searchInput resignFirstResponder];
 }
 
-- (IBAction)incrementSearchResults:(id)sender
+-(IBAction)incrementSearchResults:(id)sender
 {
-    self.stepperOutlet.maximumValue = 50.0;
-    self.stepperOutlet.minimumValue = 0.0;
     self.imagesToShow.text = [NSString stringWithFormat:@"%.0f", self.stepperOutlet.value];
-    NSLog(@"%f", self.stepperOutlet.value);
-
-
 }
 
 
@@ -80,9 +83,7 @@
                  photo.imageCategory = searchTerm;
 
                  [self.photosArray addObject:photo];
-                 
                  [self.collectionView reloadData];
-                 NSLog(@"%@", self.photosArray);
              }
          }];
     }
@@ -106,6 +107,13 @@
 {
     return UIEdgeInsetsMake(0, 0, 0, 10);
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    Photo *photo = [self.photosArray objectAtIndex:indexPath.row];
+    [self.favoritesArray addObject:photo];
+}
+
 
 
 

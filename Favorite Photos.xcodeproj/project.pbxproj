@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0C35C6193D2A1900BF0592 /* FavoritesCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C35C5193D2A1900BF0592 /* FavoritesCollectionView.m */; };
 		0E95C13E193D10A000B2FAD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E95C13D193D10A000B2FAD4 /* Foundation.framework */; };
 		0E95C140193D10A000B2FAD4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E95C13F193D10A000B2FAD4 /* CoreGraphics.framework */; };
 		0E95C142193D10A000B2FAD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E95C141193D10A000B2FAD4 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0C35C4193D2A1900BF0592 /* FavoritesCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesCollectionView.h; sourceTree = "<group>"; };
+		0E0C35C5193D2A1900BF0592 /* FavoritesCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesCollectionView.m; sourceTree = "<group>"; };
 		0E95C13A193D10A000B2FAD4 /* Favorite Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Favorite Photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E95C13D193D10A000B2FAD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E95C13F193D10A000B2FAD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 				0E95C14C193D10A000B2FAD4 /* AppDelegate.h */,
 				0E95C14D193D10A000B2FAD4 /* AppDelegate.m */,
 				0E95C14F193D10A000B2FAD4 /* Main.storyboard */,
+				0E0C35C4193D2A1900BF0592 /* FavoritesCollectionView.h */,
+				0E0C35C5193D2A1900BF0592 /* FavoritesCollectionView.m */,
 				0E95C175193D14E500B2FAD4 /* PhotoCell.h */,
 				0E95C176193D14E500B2FAD4 /* PhotoCell.m */,
 				0E95C152193D10A000B2FAD4 /* ViewController.h */,
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0C35C6193D2A1900BF0592 /* FavoritesCollectionView.m in Sources */,
 				0E95C174193D12F500B2FAD4 /* Photo.m in Sources */,
 				0E95C177193D14E500B2FAD4 /* PhotoCell.m in Sources */,
 				0E95C154193D10A000B2FAD4 /* ViewController.m in Sources */,
@@ -468,6 +474,7 @@
 				0E95C16E193D10A000B2FAD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E95C16F193D10A000B2FAD4 /* Build configuration list for PBXNativeTarget "Favorite PhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +483,7 @@
 				0E95C171193D10A000B2FAD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
